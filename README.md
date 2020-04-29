@@ -48,11 +48,7 @@ const res = await totp.getTOTP(semilla, tiempo, fecha)
 // TODO: What to do with the module?
 RNTotplibe;
   
-	// Referencias
-
-	//https://www.programcreek.com/java-api-examples/?code=echo8795%2Freact-native-android-text-to-speech%2Freact-native-android-text-to-speech-master%2Fandroid%2Fsrc%2Fmain%2Fjava%2Fcom%2Fecho%2Freactandroidtts%2FRNAndroidTextToSpeechModule.java#
 	
-	//https://medium.com/wix-engineering/creating-a-native-module-in-react-native-93bab0123e46
 
 
 ```
