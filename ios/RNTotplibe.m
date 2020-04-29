@@ -18,14 +18,6 @@
 //#import "IOSSimpleTotp.h"
 #import <Foundation/Foundation.h>
 
-@interface RNTotplibe()
-
-//@property (nonatomic, retain) IOSSimpleTotp *totp;
-//
-//@end
-
-
-@end
 @implementation RNTotplibe
 //
 //- (instancetype)init {
@@ -38,7 +30,7 @@
 
 + (BOOL)requiresMainQueueSetup
 {
-    return YES;
+  return YES;  // only do this if your module initialization relies on calling UIKit!
 }
 
 - (dispatch_queue_t)methodQueue
@@ -51,11 +43,11 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(getTOTP:(NSString *)semilla tiempo:(NSString*)tiempo fecha:(NSString*)fecha findEventsWithResolver:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject)
 {
-    if (semilla==@"semilla") {
+    if ([semilla isEqual:@"semilla"]) {
         resolve(@"esta bien");
      } else {
-         NSString *error = @"No bien ";
-       reject(@"no_events", @"There were no events", error);
+         NSError *error = ...
+       reject(@"no_events", @"There were no events",error);
      }
 }
 
