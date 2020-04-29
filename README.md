@@ -1,13 +1,13 @@
 
-# react-native-totplibe
+# react-native-simple-totp
 
 ## Getting started
 
-`$ npm install react-native-totplibe --save`
+`$ npm install react-native-simple-totp --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-totplibe`
+`$ react-native link react-native-simple-totp`
 
 ### Manual installation
 
@@ -15,7 +15,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-totplibe` and add `RNTotplibe.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-simple-totp` and add `RNTotplibe.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNTotplibe.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -26,18 +26,18 @@
   - Add `new RNTotplibePackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-totplibe'
-  	project(':react-native-totplibe').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-totplibe/android')
+  	include ':react-native-simple-totp'
+  	project(':react-native-simple-totp').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-simple-totp/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      implementation project(':react-native-totplibe')
+      implementation project(':react-native-simple-totp')
   	```
 
 
 ## Usage
 ```javascript
-import RNTotplibe from 'react-native-totplibe';
+import RNTotplibe from 'react-native-simple-totp';
 
 const semilla = '2fa5fadoirute94594iruty3087e3adb4c' //clave
 const tiempo = '90' // tiempo

@@ -1,5 +1,10 @@
 
-package com.reactlibrary;
+package com.simpletotp.jpcapelo;
+
+/**
+ * Created by jpcapelo on 28/04/20.
+ * jhonnathanp27@gmail.com
+ */
 
 import android.content.Context;
 import android.util.Log;

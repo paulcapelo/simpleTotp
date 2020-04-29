@@ -1,5 +1,10 @@
 
-package com.reactlibrary;
+package com.simpletotp.jpcapelo;
+/**
+ * Created by jpcapelo on 28/04/20.
+ * jhonnathanp27@gmail.com
+ */
+
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -13,7 +18,7 @@ import com.facebook.react.bridge.JavaScriptModule;
 public class RNTotplibePackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNTotplibeModule(reactContext));
+      return Arrays.<NativeModule>asList(new com.simpletotp.jpcapelo.RNTotplibeModule(reactContext));
     }
 
     // Deprecated from RN 0.47

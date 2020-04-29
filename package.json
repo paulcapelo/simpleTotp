@@ -1,6 +1,6 @@
 {
-  "name": "react-native-totplibe",
-  "version": "0.0.9",
+  "name": "react-native-simple-totp",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
+  "author": "jcapelo",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": ">=0.59"
   }
