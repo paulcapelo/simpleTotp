@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source_files  = "RNTotplibe/**/*.{h,m}"
   s.requires_arc = true
 
-
+  s.homepage = "https://github.com/paulcapelo/simpleTotp#readme"
   s.dependency "React"
   #s.dependency "others"
 
