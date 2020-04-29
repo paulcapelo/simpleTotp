@@ -1,6 +1,6 @@
 {
   "name": "react-native-simple-totp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "## Getting started",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,9 @@
   ],
   "author": "jcapelo",
   "license": "MIT",
+  "devDependencies": {
+    "react-native": "0.59"
+  },
   "peerDependencies": {
     "react-native": ">=0.59"
   },
