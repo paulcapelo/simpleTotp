@@ -2,7 +2,7 @@
 
 //#import "RNTotplibeSwift.h"
 
-
+#import "RNTotpLibe.h"
 #import <Foundation/Foundation.h>
 #import <CommonCrypto/CommonHMAC.h>
 #import "React/RCTBridgeModule.h"
@@ -26,7 +26,7 @@
 
 
 
-@implementation RNTotplibe : NSObject
+@implementation RNTotplibe
 
 RCT_EXPORT_MODULE()
 
