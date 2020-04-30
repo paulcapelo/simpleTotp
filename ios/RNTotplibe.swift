@@ -25,8 +25,8 @@ import Foundation
     let DIGITS_POWER: [Int] = [1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000]
     let doubleDigits: [Int] = [0, 2, 4, 6, 8, 1, 3, 5, 7, 9]
     
-    @objc
-    func getTOTP(_ semilla: String, tiempo: String, fecha: String) -> String {
+    @objc(getTOTP)
+    func getTOTP( semilla: String, tiempo: String, fecha: String) -> String {
       
         let fecha_token = fecha
         let tiempo2: Int = Int(tiempo)!

@@ -16,6 +16,10 @@ RCT_EXTERN_METHOD(getTOTP:(NSString *)semilla tiempo:(NSString *)tiempo fecha:(N
 
 @end
 
+//@interface RCT_EXTERN_MODULE(AudioHelper, NSObject)
+//   RCT_EXTERN_METHOD(playSound:(NSString *)url)
+//@end
+
 //@interface RCT_EXTERN_MODULE(RNTotplibe, NSObject)
 //RCT_EXPORT_METHOD(getTOTP:(NSString *)semilla tiempo:(NSString *)tiempo fecha:(NSString *)fecha callback:(RCTResponseSenderBlock)callback )
 //
