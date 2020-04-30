@@ -16,7 +16,7 @@
 
 #import "RNTotplibe.h"
 //#import "IOSSimpleTotp.h"
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
 
 @implementation RNTotplibe
 //
@@ -28,10 +28,10 @@
 //    return self;
 //}
 
-+ (BOOL)requiresMainQueueSetup
-{
-  return YES;  // only do this if your module initialization relies on calling UIKit!
-}
+//+ (BOOL)requiresMainQueueSetup
+//{
+//  return YES;  // only do this if your module initialization relies on calling UIKit!
+//}
 
 - (dispatch_queue_t)methodQueue
 {
@@ -40,15 +40,28 @@
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(getTOTP:(NSString *)semilla tiempo:(NSString*)tiempo fecha:(NSString*)fecha findEventsWithResolver:(RCTPromiseResolveBlock)resolve
-                 rejecter:(RCTPromiseRejectBlock)reject)
+//RCT_REMAP_METHOD(getTOTP:(NSString *)semilla tiempo: (NSString*)tiempo fecha: (NSString*)fecha,
+//                 findEventsWithResolver:(RCTPromiseResolveBlock)resolve
+//                 rejecter:(RCTPromiseRejectBlock)reject){
+//    let semi=semilla
+//    if (semi == "semilla") {
+//        resolve(@"esta bien");
+//     } else {
+//         NSError *error = nil;
+//       reject(@"no_events", @"There were no events",error);
+//     }
+//}
+
+RCT_REMAP_METHOD(getTOTP, resolver: (RCTPromiseResolveBlock)resolve
+     rejecter:(RCTPromiseRejectBlock)reject)
 {
-    if ([semilla isEqual:@"semilla"]) {
-        resolve(@"esta bien");
-     } else {
-         NSError *error = ...
-       reject(@"no_events", @"There were no events",error);
-     }
+  if( true ) {
+    NSString *thingToReturn = @"ALL OK";
+    resolve(thingToReturn);
+  } else {
+        NSError *error = nil;
+      reject([NSError errorWithDomain:@"com.companyname.app" code:0 userInfo:@{ @"text": @"something happend" }],@"",error);
+  }
 }
 
 @end
