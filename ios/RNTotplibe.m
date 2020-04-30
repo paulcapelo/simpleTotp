@@ -1,68 +1,44 @@
-//
-//#import "RNTotplibe.h"
-//
-//@implementation RNTotplibe
-//
-//- (dispatch_queue_t)methodQueue
-//{
-//    return dispatch_get_main_queue();
-//}
-//RCT_EXPORT_MODULE()
-//
-//@end
-//
-
-
 
 #import "RNTotplibe.h"
+//#import "RNTotplibeSwift.h"
+
 //#import "IOSSimpleTotp.h"
 //#import <Foundation/Foundation.h>
+#import <CommonCrypto/CommonHMAC.h>
+#import "React/RCTBridgeModule.h"
+
+
+
+
+
 
 @implementation RNTotplibe
-//
-//- (instancetype)init {
-//    self = [super init];
-//    if (self) {
-//        self.totp = [[IOSSimpleTotp alloc] init];
-//    }
-//    return self;
-//}
-
-//+ (BOOL)requiresMainQueueSetup
-//{
-//  return YES;  // only do this if your module initialization relies on calling UIKit!
-//}
-
-- (dispatch_queue_t)methodQueue
-{
-    return dispatch_get_main_queue();
-}
 
 RCT_EXPORT_MODULE()
+RCT_EXTERN_METHOD(getTOTP: (RCTResponseSenderBlock)callback)
+RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnull NSNumber *)numberArgument callback:(RCTResponseSenderBlock)callback)
+{
+    // TODO: Implement some actually useful functionality
+    callback(@[[NSString stringWithFormat: @"numberArgument: %@ stringArgument: %@", numberArgument, stringArgument]]);
+}
 
-//RCT_REMAP_METHOD(getTOTP:(NSString *)semilla tiempo: (NSString*)tiempo fecha: (NSString*)fecha,
-//                 findEventsWithResolver:(RCTPromiseResolveBlock)resolve
-//                 rejecter:(RCTPromiseRejectBlock)reject){
-//    let semi=semilla
-//    if (semi == "semilla") {
-//        resolve(@"esta bien");
-//     } else {
-//         NSError *error = nil;
-//       reject(@"no_events", @"There were no events",error);
-//     }
+
+//RCT_EXPORT_METHOD(getTOTP:(NSString *)semilla tiempo:(NSString *)tiempo fecha:(NSString *)fecha callback:(RCTResponseSenderBlock)callback )
+//{
+//    if(semilla==@""|| tiempo==@"" || fecha==@""){
+//        callback(@[[NSString stringWithFormat: @"{\"error\": \"Verifique los datos\"}"]]);
+//    }else{
+//   HOTPAlgorithm * myOb = [HOTPAlgorithm new];
+//
+//
+//   NSString * retString = [myOb getTOTP:semilla tiempo fecha ];
+////    TOTP = hotpAlgo.generateByTimeOTP(semilla:semilla, tiempo: tiempo, fecha: fecha)
+////    callback(@[[NSString stringWithFormat: @"{\"TOTP\": \"%@\"}", TOTP]]);
+//    }
 //}
 
-RCT_REMAP_METHOD(getTOTP, resolver: (RCTPromiseResolveBlock)resolve
-     rejecter:(RCTPromiseRejectBlock)reject)
-{
-  if( true ) {
-    NSString *thingToReturn = @"ALL OK";
-    resolve(thingToReturn);
-  } else {
-        NSError *error = nil;
-      reject([NSError errorWithDomain:@"com.companyname.app" code:0 userInfo:@{ @"text": @"something happend" }],@"",error);
-  }
-}
+
+
 
 @end
 

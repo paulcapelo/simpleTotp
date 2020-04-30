@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		165DC95D2459E7CF0009C10D /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 165DC93E2459E6AA0009C10D /* libReact.a */; };
-		165DC9632459F2C20009C10D /* IOSSimpleTotp.m in Sources */ = {isa = PBXBuildFile; fileRef = 165DC9612459F2C20009C10D /* IOSSimpleTotp.m */; };
+		1685F4AD245B5017002AB656 /* RNTotplibe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685F4AC245B5017002AB656 /* RNTotplibe.swift */; };
 		B3E7B58A1CC2AC0600A0062D /* RNTotplibe.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNTotplibe.m */; };
 /* End PBXBuildFile section */
 
@@ -142,8 +142,8 @@
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNTotplibe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNTotplibe.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		165DC92A2459E6A90009C10D /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		165DC9612459F2C20009C10D /* IOSSimpleTotp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSSimpleTotp.m; sourceTree = "<group>"; };
-		165DC9622459F2C20009C10D /* IOSSimpleTotp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSSimpleTotp.h; sourceTree = "<group>"; };
+		1685F4AB245B5017002AB656 /* RNTotplibe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNTotplibe-Bridging-Header.h"; sourceTree = "<group>"; };
+		1685F4AC245B5017002AB656 /* RNTotplibe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNTotplibe.swift; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNTotplibe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTotplibe.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNTotplibe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTotplibe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,12 +202,12 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				165DC9622459F2C20009C10D /* IOSSimpleTotp.h */,
-				165DC9612459F2C20009C10D /* IOSSimpleTotp.m */,
+				1685F4AC245B5017002AB656 /* RNTotplibe.swift */,
 				B3E7B5881CC2AC0600A0062D /* RNTotplibe.h */,
 				B3E7B5891CC2AC0600A0062D /* RNTotplibe.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				165DC9292459E6A90009C10D /* Frameworks */,
+				1685F4AB245B5017002AB656 /* RNTotplibe-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,6 +242,7 @@
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -389,7 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				165DC9632459F2C20009C10D /* IOSSimpleTotp.m in Sources */,
+				1685F4AD245B5017002AB656 /* RNTotplibe.swift in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNTotplibe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,32 +482,41 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNTotplibe;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNTotplibe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNTotplibe;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNTotplibe-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
