@@ -22,6 +22,6 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNNativeToastLibrary } = NativeModules;
+const { RNTotplibe } = NativeModules;
 
-export default RNNativeToastLibrary;
+export default RNTotplibe;
