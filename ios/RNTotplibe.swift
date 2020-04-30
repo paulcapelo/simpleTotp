@@ -25,7 +25,7 @@ import Foundation
     let DIGITS_POWER: [Int] = [1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000]
     let doubleDigits: [Int] = [0, 2, 4, 6, 8, 1, 3, 5, 7, 9]
     
-    @objc func getTOTP( semilla: String, tiempo: String, fecha: String) -> String {
+    @objc func getTOTP( semilla: String, tiempo: String, fecha: String, callback: @escaping RCTResponseSenderBlock) -> Void {
       
         let fecha_token = fecha
         let tiempo2: Int = Int(tiempo)!
@@ -42,7 +42,10 @@ import Foundation
         let counter = (time / window)
         
         let valor = generateTOTP(semilla, movingFactor: counter, codeDigits: 6)
-        return valor
+        callback([NSNull(), [
+               "totp": valor
+             ]])
+//        return valor
     }
 //    func generateByTimeOTP (_ semilla: String, window: UInt64) -> String {
 //        let date = Date().timeIntervalSince1970
