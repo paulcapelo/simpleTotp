@@ -1,5 +1,5 @@
 //
-//  HOTPAlgorithm.swift
+
 //  AppCrea
 //
 //  Created by Jennifer Torres on 5/1/17.
@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-//class HOTPAlgorithm {
+
     @objc(RNTotplibe)
     class RNTotplibe : NSObject, RCTBridgeModule  {
         
@@ -18,7 +18,7 @@ import Foundation
             return "TOTP";
         }
         
-        static func requireMainQueueSetup()-> Bool{
+        static func requiresMainQueueSetup()-> Bool{
             return true;
         }
     
