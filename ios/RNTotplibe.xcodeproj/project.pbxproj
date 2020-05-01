@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		165DC95D2459E7CF0009C10D /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 165DC93E2459E6AA0009C10D /* libReact.a */; };
 		1685F4AD245B5017002AB656 /* RNTotplibe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685F4AC245B5017002AB656 /* RNTotplibe.swift */; };
+		1685F4C4245BA07B002AB656 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1685F4C3245BA07B002AB656 /* UIKit.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNTotplibe.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNTotplibe.m */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +145,7 @@
 		165DC92A2459E6A90009C10D /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		1685F4AB245B5017002AB656 /* RNTotplibe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNTotplibe-Bridging-Header.h"; sourceTree = "<group>"; };
 		1685F4AC245B5017002AB656 /* RNTotplibe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNTotplibe.swift; sourceTree = "<group>"; };
+		1685F4C3245BA07B002AB656 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B3E7B5891CC2AC0600A0062D /* RNTotplibe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTotplibe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1685F4C4245BA07B002AB656 /* UIKit.framework in Frameworks */,
 				165DC95D2459E7CF0009C10D /* libReact.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +173,7 @@
 		165DC9292459E6A90009C10D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1685F4C3245BA07B002AB656 /* UIKit.framework */,
 				165DC92A2459E6A90009C10D /* React.xcodeproj */,
 			);
 			name = Frameworks;
