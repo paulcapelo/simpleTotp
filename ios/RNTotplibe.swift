@@ -6,21 +6,21 @@
 //  Copyright © 2017 Jennifer Torres. All rights reserved.
 //
 
-import UIKit
+
 import Foundation
+import UIKit
 
-
-    @objc(RNTotplibe)
-    class RNTotplibe : NSObject, RCTBridgeModule  {
+@objc(RNTotplibe)
+class RNTotplibe : NSObject, RCTBridgeModule  {
+    
         
+    static func moduleName()->String!{
+        return "TOTP";
+    }
         
-        static func moduleName()->String!{
-            return "TOTP";
-        }
-        
-        static func requiresMainQueueSetup()-> Bool{
-            return true;
-        }
+    @objc static func requiresMainQueueSetup() -> Bool {
+        return false
+    }
     
     let DIGITS_POWER: [Int] = [1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000]
     let doubleDigits: [Int] = [0, 2, 4, 6, 8, 1, 3, 5, 7, 9]
