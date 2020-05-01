@@ -11,3 +11,5 @@
 #import <React/RCTConvert.h>
 #import <React/RCTBundleURLProvider.h>
 #import <CommonCrypto/CommonHMAC.h>
+#import <React/RCTViewManager.h>
+#import <React/RCTUIManager.h>
