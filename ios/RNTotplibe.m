@@ -1,17 +1,24 @@
-#import <React/RCTBridgeModule.h>
+// #import <React/RCTBridgeModule.h>
 
+
+// @interface RCT_EXTERN_MODULE(RNTotplibe, NSObject)
+
+// //RCT_EXTERN_METHOD(getTOTP:(NSString*)semilla tiempo:(NSString*)tiempo fecha:(NSString*)fecha resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
+
+
+// RCT_EXTERN_METHOD(getMyPromise:(BOOL) value
+// resolver:(RCTPromiseResolveBlock)resolve
+// rejecter:(RCTPromiseRejectBlock)reject
+
+// @end
+
+#import <React/RCTBridgeModule.h>
 
 @interface RCT_EXTERN_MODULE(RNTotplibe, NSObject)
 
-//RCT_EXTERN_METHOD(getTOTP:(NSString*)semilla tiempo:(NSString*)tiempo fecha:(NSString*)fecha resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
-
-
-RCT_EXTERN_METHOD(getMyPromise:(BOOL) value
-resolver:(RCTPromiseResolveBlock)resolve
-rejecter:(RCTPromiseRejectBlock)reject
+RCT_EXTERN_METHOD(getTOTP:(NSString *)name location:(NSString *)location date:(nonnull NSNumber *)date)
 
 @end
-
 
 
 //#import "RNTotplibe-Swift.h"
