@@ -11,13 +11,14 @@
 // rejecter:(RCTPromiseRejectBlock)reject
 
 // @end
-
+//#import "RNTotplibe.swift"
 #import <React/RCTBridgeModule.h>
+#import <Foundation/Foundation.h>
 
-@interface RCT_EXTERN_MODULE(RNTotplibe, NSObject)
+@interface RCT_EXTERN_MODULE(MyFancyLibrary, NSObject)
 
-RCT_EXTERN_METHOD(getTOTP:(NSString *)name location:(NSString *)location date:(nonnull NSNumber *)date)
-
+RCT_EXTERN_METHOD(printHelloWorld)
+RCT_EXTERN_METHOD(getUnreadCount: (RCTResponseSenderBlock)callback)
 @end
 
 

@@ -11,15 +11,18 @@
 @objc(RNTotplibe)
 class RNTotplibe: NSObject {
 
-  @objc(getTOTP:location:date:)
-  func getTOTP(name: String, location: String, date: NSNumber) -> Void {
-    
-  }
 
   @objc
-  func constantsToExport() -> [String: Any]! {
-    return ["someKey": "someValue"]
+  func printHelloWorld() {
+    print("Hello World")
   }
+  
+  @objc
+   func getUnreadCount(_ callback: RCTResponseSenderBlock) {
+     callback([10])
+   }
+  
+  
 
 }
 
