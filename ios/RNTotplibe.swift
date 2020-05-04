@@ -21,8 +21,6 @@ class RNTotplibe: NSObject {
    func getUnreadCount(_ callback: RCTResponseSenderBlock) {
      callback([10])
    }
-  
-  
 
 }
 
