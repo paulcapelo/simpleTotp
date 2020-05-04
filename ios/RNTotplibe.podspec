@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
   s.platform     = :ios, "9.0"
-  s.source       = { :git => "https://github.com/author/RNTotplibe.git", :tag => "master" }
+  s.source       = { :git => "https://github.com/paulcapelo/simpleTotp.git", :tag => "master" }
   s.source_files  = "RNTotplibe/**/*.{h,m}"
   s.requires_arc = true
 
