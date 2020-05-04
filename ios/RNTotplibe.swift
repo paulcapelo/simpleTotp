@@ -6,7 +6,7 @@
 //  Copyright © 2017 Jennifer Torres. All rights reserved.
 //
 
-
+import Foundation
 
 @objc(RNTotplibe)
 class RNTotplibe: NSObject {
