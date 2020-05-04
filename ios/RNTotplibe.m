@@ -15,7 +15,7 @@
 #import <React/RCTBridgeModule.h>
 #import <Foundation/Foundation.h>
 
-@interface RCT_EXTERN_MODULE(MyFancyLibrary, NSObject)
+@interface RCT_EXTERN_MODULE(RNTotplibe, NSObject)
 
 RCT_EXTERN_METHOD(printHelloWorld)
 RCT_EXTERN_METHOD(getUnreadCount: (RCTResponseSenderBlock)callback)
