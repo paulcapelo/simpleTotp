@@ -16,7 +16,7 @@ class RNTotplibe: NSObject {
     
    
     @objc
-    func getTOTP(_ semilla: String, tiempo: String, fecha: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) -> Void {
+    func getTOTP(semilla: String, tiempo: String, fecha: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) -> Void {
       
         let fecha_token = fecha
         let tiempo2: Int = Int(tiempo)!
