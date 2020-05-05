@@ -16,25 +16,25 @@ class RNTotplibe: NSObject {
     
    
     @objc
-    func getTOTP(_ semilla: String, tiempo: String, fecha: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) -> Void {
+    func getTOTP(semilla: String, tiempo: String, fecha: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) -> Void {
       
-        let fecha_token = fecha
-        let tiempo2: Int = Int(tiempo)!
-        let window = UInt64(tiempo2*1000)/1000
+        // let fecha_token = fecha
+        // let tiempo2: Int = Int(tiempo)!
+        // let window = UInt64(tiempo2*1000)/1000
         
-        var fecha:Date = Date()
-        if fecha_token != "" {
-            let dateFormatter = getDateFormatted4()
-            fecha = dateFormatter.date(from: fecha_token)!
-        }
+        // var fecha:Date = Date()
+        // if fecha_token != "" {
+        //     let dateFormatter = getDateFormatted4()
+        //     fecha = dateFormatter.date(from: fecha_token)!
+        // }
         
-        let date: Int = Int(fecha.timeIntervalSince1970)
-        let time = UInt64(date*1000)/1000
-        let counter = (time / window)
+        // let date: Int = Int(fecha.timeIntervalSince1970)
+        // let time = UInt64(date*1000)/1000
+        // let counter = (time / window)
         
-        let valor = generateTOTP(semilla, movingFactor: counter, codeDigits: 6)
+        // let valor = generateTOTP(semilla, movingFactor: counter, codeDigits: 6)
      
-         resolve(["\(valor)"]);
+         resolve(["yfytfvtyytyyff"]);
     }
 
     
