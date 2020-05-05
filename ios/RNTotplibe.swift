@@ -15,7 +15,8 @@ class RNTotplibe: NSObject {
     let doubleDigits: [Int] = [0, 2, 4, 6, 8, 1, 3, 5, 7, 9]
     
    
-    @objc
+    
+    @objc(getTOTP:tiempo:fecha:resolve:reject:)
     func getTOTP(semilla: String, tiempo: String, fecha: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) -> Void {
       
         // let fecha_token = fecha
