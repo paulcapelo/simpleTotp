@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "jhonnathanp27@gmail.com" }
-  s.platform     = { :ios => "9.0" }
+  s.platform     = :ios => "10.0" 
   s.source       = { :git => "https://github.com/paulcapelo/simpleTotp.git", :tag => "#{s.version}" }
   s.source_files  = "ios/**/*.{h,m,swift}"
   s.swift_version = '5.0'
