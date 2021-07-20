@@ -12,7 +12,7 @@
   "author": "jcapelo",
   "license": "MIT",
   "devDependencies": {
-    "react-native": "0.59"
+    "react-native": "0.62"
   },
   "peerDependencies": {
     "react-native": ">=0.59"
